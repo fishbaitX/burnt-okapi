@@ -21,6 +21,8 @@ int Keyboard::readInt(string prompt)
    int val = 0;
    cin >> val;
    return val;
+   //absolutely nothing
+
 }
 
 int Keyboard::getValidatedInt(string prompt, int min, int max)
