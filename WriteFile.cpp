@@ -1,6 +1,11 @@
 #include "WriteFile.h"
 #include <sstream>
 #include <fstream>
+//babe, im gonna leave you
+//I said baby, you know, im gonna leave you
+//leave you in the summer time
+//I can hear it calling me the way it used to do
+//I can hear it calling me back HOME!!!
 
 WriteFile::createWriteFile(const char* file_name)
 {
