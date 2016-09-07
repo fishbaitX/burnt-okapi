@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string>
 
-
 ReadFile::ReadFile(const char* file_name)
 {
    input_file.open(file_name);
@@ -12,7 +11,9 @@ ReadFile::ReadFile(const char* file_name)
 
 ReadFile::~ReadFile()
 {
-  
+   delete input_file;
+   delete _eof;
+   delete closed;
 }
 
 bool ReadFile::eof()
@@ -20,7 +21,7 @@ bool ReadFile::eof()
    return _eof;
 }
 
-void ReadFile::close()
+ReadFile::close()
 {
    if (!closed)
    {
